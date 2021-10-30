@@ -1,0 +1,37 @@
+.network-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.network-list__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+.network-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  @include animation($property: background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.network-list__icon {
+  height: 20px;
+  width: 20px;
+  fill: var(--icon-color);
+  @include animation($property: fill);
+
+  .network-list__link:hover &,
+  .network-list__link:focus & {
+    fill: var(--primary-title-color);
+  }
+}

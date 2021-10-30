@@ -1,0 +1,63 @@
+.label {
+  position: relative;
+  display: block;
+  margin-bottom: 18px;
+  @include fonts(400, 12px, 1.14, 0.01em);
+  color: var(--text-color);
+}
+.label__input {
+  width: 100%;
+  margin-top: 4px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include fonts(400, 12px, 1.17, 0.01em);
+  padding-left: 42px;
+  @include animation($property: fill border-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+.label__textarea {
+  display: block;
+  resize: none;
+  padding: 12px 16px;
+  @include animation($property: border-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+}
+.label__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: var(--second-logo-color);
+  .label__input:hover + &,
+  .label__input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.label--txt {
+  display: block;
+  position: relative;
+  margin-bottom: 0;
+  @include fonts(400, 12px, 1.14, 0.01em);
+  color: var(--text-color);
+}
+textarea::placeholder {
+  @include fonts(400, 12px, 1.17, 0.01em);
+  color: rgba(117, 117, 117, 0.5);
+}

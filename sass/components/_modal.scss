@@ -1,0 +1,41 @@
+.modal {
+  display: block;
+  padding: 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  background-color: var(--primary-title-color);
+
+  @include animation($property: transform);
+  .backdrop--hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  @media screen and (min-width: 480px) {
+    min-height: 609px;
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-height: 581px;
+    min-width: 528px;
+  }
+}
+.modal__button {
+  margin-top: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  line-height: 1.88;
+  margin-left: auto;
+  margin-right: auto;
+  @include animation($property: cursor);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}

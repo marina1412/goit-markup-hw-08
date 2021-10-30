@@ -1,0 +1,40 @@
+.section--padding {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.works {
+  padding: 0;
+  display: flex;
+}
+.works__item {
+  padding: 0;
+  margin: 0;
+  margin-left: 30px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.works__thumb {
+  position: relative;
+}
+
+.works__text {
+  display: block;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+  @include fonts(700, 14px, 1.14, 0.03em);
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+  background: rgba(47, 48, 58, 0.8);
+}

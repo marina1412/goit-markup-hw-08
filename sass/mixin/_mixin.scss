@@ -1,0 +1,15 @@
+@mixin fonts($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+@mixin animation(
+  $property,
+  $function: cubic-bezier(0.4, 0, 0.2, 1),
+  $duration: 250ms
+) {
+  transition-property: $property;
+  transition-timing-function: $function;
+  transition-duration: $duration;
+}

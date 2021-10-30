@@ -1,0 +1,26 @@
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: var(--primary-title-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.close-button__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  fill: var(--second-logo-color);
+  @include animation($property: fill cursor);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    cursor: pointer;
+  }
+}

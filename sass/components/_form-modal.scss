@@ -1,0 +1,15 @@
+.modal__title {
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 12px;
+  @media screen and (min-width: 480px) {
+    @include fonts(700, 20px, 1.5, 0.03em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include fonts(700, 20px, 1.15, 0.03em);
+  }
+}
+
+.form-modal {
+  display: block;
+}

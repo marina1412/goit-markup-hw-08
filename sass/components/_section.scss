@@ -1,0 +1,25 @@
+.section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+}
+.section__title {
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 30px;
+  @include fonts(700, 28px, 1.17, 0.03em);
+  @media screen and(min-width: 1200px) {
+    @include fonts(700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
+  }
+}
+.section__title--hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
