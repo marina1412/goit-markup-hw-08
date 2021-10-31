@@ -475,13 +475,13 @@ summary {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 430px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 738px;
   }
 }
 
