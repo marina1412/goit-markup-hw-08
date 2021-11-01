@@ -402,6 +402,53 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle menu-toggle--close js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use href="./images/icons.svg#icon-close_m"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студия</a>
+        </li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link mobile-menu__link--current">Портфолио</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="tel:+380961111111" class="mobile-contacts__link--phone">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contacts__link--mail">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-network">
+        <li class="mobile-network__item">
+          <a href="" class="mobile-network__link">
+            Instagram |
+          </a>
+        </li>
+        <li class="mobile-network__item">
+          <a href="" class="mobile-network__link">
+            Twitter |
+          </a>
+        </li>
+        <li class="mobile-network__item">
+          <a href="" class="mobile-network__link">
+            Facebook |
+          </a>
+        </li>
+        <li class="mobile-network__item">
+          <a href="" class="mobile-network__link">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
     <footer class="footer">
       <div class="container footer__parts">
         <div class="footer__address">
@@ -462,14 +509,8 @@
         <div class="footer__form">
           <p class="footer__title">Подпишитесь на рассылку</p>
           <form class="form">
-            <input
-              type="email"
-              name="email"
-              class="form__input"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="button form__button">
-              Подписаться
+            <input type="email" name="email" class="form__input" placeholder="E-mail">
+            <button type="submit" class="button form__button">Подписаться
               <svg class="form__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -478,5 +519,9 @@
         </div>
       </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

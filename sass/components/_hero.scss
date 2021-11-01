@@ -1,46 +1,64 @@
 .hero {
-  background-color: var(--fone-color-black);
+  //background-color: var(--fone-color-black);
   text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4),
-    background-image url(../images/background-mobile.jpg)
-  );
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/background-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (min-width: 480px) {
-    max-width: 480px;
-    max-height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-    background-image: url(../images/background-mobile.jpg);
-    @media (min-resolution: 2dppx) {
-      & {
-        background-image: url(../images/background-mobile@2x.jpg);
-      }
+  @media (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-mobile@2x.jpg);
     }
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
-    max-height: 400px;
-    background-image: url(../images/background-tablet.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-tablet.jpg);
     @media (min-resolution: 2dppx) {
       & {
-        background-image: url(../images/background-tablet@2x.jpg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/background-tablet@2x.jpg);
       }
     }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/background.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
     min-height: 600px;
     @media (min-resolution: 2dppx) {
       & {
-        background-image: url(../images/background@2x.jpg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../images/background@2x.jpg);
       }
     }
   }

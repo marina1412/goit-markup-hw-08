@@ -4,7 +4,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
   &:hover,
   &:focus {
     fill: var(--accent-color);
@@ -29,6 +30,8 @@
   height: 100vh;
   padding-top: 48px;
   padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
   background-color: var(--primary-title-color);
 
   transform: translateX(105%);
@@ -79,11 +82,6 @@
 }
 .mobile-network {
   display: flex;
-}
-.mobile-network {
-  position: absolute;
-  left: 40px;
-  bottom: 48px;
 }
 .mobile-network__link {
   @include fonts(500, 18px, 1.2, 0.02em);

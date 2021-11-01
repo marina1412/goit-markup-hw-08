@@ -4,8 +4,6 @@
   font-family: var(--logo-font);
   @include fonts(700, 26px, 1.2, 0.03em);
   color: var(--second-logo-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .logo--current {
   color: var(--accent-color);
