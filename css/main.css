@@ -1100,23 +1100,13 @@ label {
   flex-wrap: wrap;
   justify-content: center;
   margin-right: -30px;
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list {
-    margin-bottom: -30px;
-  }
+  margin-bottom: -30px;
 }
 
 .clients-list__item {
   margin-right: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .clients-list__item {
-    flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-  }
+  flex-basis: calc(100% / 2 - 30px);
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
