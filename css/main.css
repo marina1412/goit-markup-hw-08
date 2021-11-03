@@ -1204,23 +1204,9 @@ label {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__logo {
-    padding-bottom: 0;
-    margin-left: 0;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
     text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .address {
-    margin-top: 10px;
-    margin-bottom: 0;
   }
 }
 
@@ -1297,12 +1283,6 @@ label {
   fill: var(--primary-title-color);
 }
 
-@media screen and (min-width: 768px) {
-  .footer__form {
-    margin-top: 0;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__form {
     margin-left: auto;
@@ -1349,7 +1329,7 @@ label {
 @media screen and (min-width: 1200px) {
   .form__input {
     width: 358px;
-    margin-bottom: 0%;
+    margin-bottom: 0;
   }
 }
 
